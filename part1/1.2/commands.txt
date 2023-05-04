@@ -1,0 +1,4 @@
+PS C:\Users\faj_a> docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+PS C:\Users\faj_a> docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE

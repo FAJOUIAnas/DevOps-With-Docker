@@ -1,0 +1,8 @@
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\example-frontend> docker build . -t frontend-project; docker run -p 8080:5000 frontend-project
+[+] Building 620.3s (12/12) FINISHED
+ => [internal] load build definition from Dockerfile                                                       0.1s
+...
+ INFO  Accepting connections at http://localhost:5000
+ HTTP  5/3/2023 3:42:42 PM 172.17.0.1 GET /
+ HTTP  5/3/2023 3:42:42 PM 172.17.0.1 Returned 304 in 40 ms
+...

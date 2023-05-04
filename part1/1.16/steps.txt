@@ -1,0 +1,6 @@
+1- I created a free render account.
+2- went to Dashboard --> New --> Web Service.
+3- I chose the GitHub repo I wanted to donnect to, which in this case is: https://github.com/FAJOUIAnas/simple-nodejs-app-docker/tree/master.
+4- clicked on Connect, chose a name, region, and a Runtime.
+5- I went with the free plan, wait some time for the Web Service to be created.
+6- The Web Service is available at: https://simple-web-app-docker.onrender.com/

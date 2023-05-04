@@ -1,0 +1,19 @@
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\example-frontend> docker build . -t frontend-project; docker run -p 5000:5000 frontend-project
+[+] Building 2.0s (11/11) FINISHED
+...
+ INFO  Accepting connections at http://localhost:5000
+ HTTP  5/3/2023 5:58:06 PM 172.17.0.1 GET /
+ HTTP  5/3/2023 5:58:06 PM 172.17.0.1 Returned 200 in 58 ms
+ HTTP  5/3/2023 5:58:06 PM 172.17.0.1 GET /static/css/main.9ee2e4df.chunk.css
+ HTTP  5/3/2023 5:58:06 PM 172.17.0.1 Returned 304 in 24 ms
+...
+
+###################################################################################################################################################################
+
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\example-backend> docker build . -t backend-project; docker run -p 8080:8080 backend-project
+[+] Building 3.5s (9/9) FINISHED
+...
+
+[Ex 2.4+] REDIS_HOST env was not passed so redis connection is not initialized
+...
+[GIN] 2023/05/03 - 17:58:21 | 200 |     216.312µs |      172.17.0.1 | GET      "/ping"

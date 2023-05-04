@@ -1,0 +1,13 @@
+PS C:\Users\faj_a\Desktop\devops-docker\Exercices\part1\1.9> New-Item text.log; docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
+
+
+    Directory: C:\Users\faj_a\Desktop\devops-docker\Exercices\part1\1.9
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          5/2/2023   5:26 PM              0 text.log
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+...

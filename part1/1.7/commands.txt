@@ -1,0 +1,20 @@
+PS C:\Users\faj_a\Desktop\devops-docker\part1\1.7> docker build . -t image-for-script:curler
+[+] Building 109.3s (10/10) FINISHED
+ => [internal] load build definition from Dockerfile                                      0.0s
+...
+
+PS C:\Users\faj_a\Desktop\devops-docker\part1\1.7> docker images
+REPOSITORY         TAG       IMAGE ID       CREATED          SIZE
+image-for-script   curler    21cc94a6bda2   41 seconds ago   131MB
+
+PS C:\Users\faj_a\Desktop\devops-docker\part1\1.7> docker run -it 2
+Input website:
+helsinki.fi
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.20.1</center>
+</body>
+</html>

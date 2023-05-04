@@ -1,0 +1,26 @@
+PS C:\Users\faj_a\Desktop\devops-docker\part1\1.8> docker build . -t two-line-dockerfile:web-server
+[+] Building 0.5s (5/5) FINISHED
+ => [internal] load build definition from Dockerfile                                               0.0s
+...
+
+PS C:\Users\faj_a\Desktop\devops-docker\part1\1.8> docker images
+REPOSITORY                          TAG          IMAGE ID       CREATED          SIZE
+devopsdockeruh/simple-web-service   alpine       fd312adc88e0   2 years ago      15.7MB
+two-line-dockerfile                 web-server   978fbf315695   2 years ago      15.7MB
+
+PS C:\Users\faj_a\Desktop\devops-docker\part1\1.8> docker run 978
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:   export GIN_MODE=release
+ - using code:  gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+
+
+
+
+
+
+
