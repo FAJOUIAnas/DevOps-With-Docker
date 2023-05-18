@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:alpine
+
+  backend:
+    build: ../../material-applications/example-backend
+    image: backend-project
+    ports:
+      - 8080:8080
+    environment:
+      - REDIS_HOST=redis
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DATABASE=postgres
+
+  frontend:
+    build: ../../material-applications/example-frontend
+    image: frontend-project
+    ports:
+      - 5000:5000
+  
+  db:
+    image: postgres:13.2-alpine
+    restart: unless-stopped
+    environment:
+        POSTGRES_PASSWORD: postgres

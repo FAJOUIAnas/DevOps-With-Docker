@@ -1,0 +1,11 @@
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\scaling-exercise> docker compose up -d --scale compute=5
+[+] Running 8/8
+ ✔ Network scaling-exercise_default      Created                                                                         0.1s
+ ✔ Container calculator                  Started                                                                         1.7s
+ ✔ Container load-balancer               Started                                                                         1.7s
+ ✔ Container scaling-exercise-compute-5  Started                                                                         2.4s
+ ✔ Container scaling-exercise-compute-1  Started                                                                         5.6s
+ ✔ Container scaling-exercise-compute-2  Started                                                                         1.3s
+ ✔ Container scaling-exercise-compute-3  Started                                                                         3.3s
+ ✔ Container scaling-exercise-compute-4  Started                                                                         4.3s
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\scaling-exercise>
