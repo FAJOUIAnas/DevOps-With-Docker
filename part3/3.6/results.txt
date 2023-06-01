@@ -1,0 +1,32 @@
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\example-backend> docker build . -t backend
+[+] Building 8.4s (12/12) FINISHED
+=> [internal] load build definition from Dockerfile 0.1s
+=> => transferring dockerfile: 199B 0.0s
+...
+
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\example-frontend> docker build . -t frontend
+[+] Building 2.0s (18/18) FINISHED
+=> [internal] load build definition from Dockerfile 0.1s
+...
+
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications> docker images
+REPOSITORY TAG IMAGE ID CREATED SIZE
+frontend latest 4f36546e1916 3 days ago 610MB
+backend latest dafa762bd061 3 days ago 1.07GB
+
+# After optimization
+
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\example-backend> docker build . -t backend
+[+] Building 26.4s (9/9) FINISHED
+=> [internal] load build definition from Dockerfile 1.2
+...
+
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\example-frontend> docker build . -t frontend
+[+] Building 362.1s (9/9) FINISHED
+=> [internal] load build definition from Dockerfile
+...
+
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\example-frontend> docker images
+REPOSITORY TAG IMAGE ID CREATED SIZE
+frontend latest 3c2149e01309 41 seconds ago 608MB
+backend latest 05e65804a96b 7 minutes ago 1.07GB

@@ -1,0 +1,12 @@
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\example-frontend> docker images
+REPOSITORY TAG IMAGE ID CREATED SIZE
+frontend latest 3c2149e01309 41 seconds ago 608MB
+backend latest 05e65804a96b 7 minutes ago 1.07GB
+
+
+# After optimization
+
+PS C:\Users\faj_a\Desktop\devops-docker\material-applications\example-frontend> docker images
+REPOSITORY                                                          TAG               IMAGE ID       CREATED              SIZE
+frontend                                                            latest            0022c3e05592   About a minute ago   469MB
+backend                                                             latest            2f79e8aea73a   12 minutes ago       447MB
